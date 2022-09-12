@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link, a:hover, a:visited{
+            color: blue;
+            text-decoration: none;
+        }
+        body{
+            background-color: lightskyblue;
+        }
+        table, td{
+            border: 1px solid red;
+        }
+        td{
+            padding: 30px 60px;
+        }
+        tr{
+            text-align: center;
+        }
+        .verde{
+            background-color: green;
+        }
+        .vermelho{
+            background-color: red;
+        }
+        .azul{
+            background-color: blue;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        #legenda{
+            background-color: white;
+        }
+        #legenda td{
+            padding: 2px 10px 2px 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Praticando 6 - Tabela grande, colspan, rowspan e planos de fundo</h1>
+    <p><a href="index.html">Voltar ao Menu Principal</a></p>
+
+    <table>
+        <caption>Tabela grande com colspan e rowspan</caption>
+        <tr class="verde">
+            <td colspan="2">Colspan</td>
+            <td>-</td>
+            <td rowspan="3">Rowspan</td>
+        </tr>
+        <tr class="vermelho">
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="azul">
+            <td>-</td>
+            <td colspan="2">Colspan</td>
+        </tr>
+        <tr class="amarelo">
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <table id="legenda">
+        <caption>Legenda</caption>
+        <tr>
+            <td>Linha 1</td>
+            <td class="verde">--------</td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td>Linha 2</td>
+            <td class="vermelho">--------</td>
+            <td>Red</td>
+        </tr>
+        <tr>
+            <td>Linha 3</td>
+            <td class="azul">--------</td>
+            <td>Blue</td>
+        </tr>
+        <tr>
+            <td>Linha 4</td>
+            <td class="amarelo">--------</td>
+            <td>Yellow</td>
+        </tr>
+    </table>
+
+</body>
+</html>
